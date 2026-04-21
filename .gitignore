@@ -1,0 +1,24 @@
+# Ignore datasets
+
+*.csv
+*.xlsx
+*.json
+
+# Ignore notebook checkpoints
+
+.ipynb_checkpoints/
+
+# Ignore Python cache
+
+**pycache**/
+*.pyc
+
+# Ignore environment files
+
+.env
+.venv/
+
+# Ignore system files
+
+.DS_Store
+Thumbs.db
