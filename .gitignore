@@ -16,9 +16,15 @@
 # Ignore environment files
 
 .env
-.venv/
+venv/
 
 # Ignore system files
 
 .DS_Store
 Thumbs.db
+
+.claude/
+
+ML_Project_Proposal_document.pdf
+
+Airbnb.zip

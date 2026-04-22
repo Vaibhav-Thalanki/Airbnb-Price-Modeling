@@ -1,0 +1,9 @@
+# Minimal dependencies for running TA_evaluation_run.ipynb
+# All CPU — no CUDA / GPU drivers needed. Tested on Python 3.12.
+
+numpy
+pandas
+joblib
+scikit-learn>=1.5
+xgboost>=2.0
+tensorflow>=2.15    # only needed to load the saved ANN (CPU build is fine)
