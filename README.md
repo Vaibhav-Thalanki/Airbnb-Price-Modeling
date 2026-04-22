@@ -132,6 +132,7 @@ matplotlib
 seaborn
 nltk               # only for rerunning feature engineering
 folium             # optional, for map visualizations
+matplotlib
 ```
 
 A minimal `requirements.txt` is included. No CUDA, no GPU drivers required. TensorFlow runs on CPU for the small ANN used here.
