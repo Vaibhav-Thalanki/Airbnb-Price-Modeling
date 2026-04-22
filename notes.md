@@ -38,6 +38,11 @@ The test set has no ground-truth `log_price` (it was the Kaggle competition hold
 
 ## 2. Technical Approach
 
+The end-to-end pipeline — from raw CSVs through preprocessing, feature engineering, split, model training, and validation — is summarized in Fig. 2.
+
+**End-to-end pipeline**
+![End-to-end technical approach](docs/pictures/technical_approach.png)
+
 ### 2.1 Feature Engineering
 
 Feature engineering is performed once in `Airbnb_modeling_CS6140_ML.ipynb` and cached to `data/engineered/features.csv` and `features_test.csv`. The final feature matrix is **(74111, 206)** for train and **(25458, 206)** for test after one-hot expansion.

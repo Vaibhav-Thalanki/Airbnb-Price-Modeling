@@ -36,6 +36,10 @@ Because the test set has no `log_price`, we do **not** compute metrics on it —
 
 ---
 
+## Pipeline overview
+
+![End-to-end technical approach](docs/pictures/technical_approach.png)
+
 ## Feature engineering
 
 Performed once in `Airbnb_modeling_CS6140_ML.ipynb` and cached to `data/engineered/`.
@@ -92,9 +96,12 @@ CV scores are the **honest generalization estimates**. Validation-split scores f
 ```
 .
 ├── README.md
+├── notes.md                        # technical details & results
 ├── requirements.txt
 ├── TA_evaluation_run.ipynb          <-- RUN THIS ONE FOR GRADING
 ├── Airbnb_modeling_CS6140_ML.ipynb  # full training notebook with feature engineering
+│
+├── docs/pictures/*                  # saved pictures
 │
 ├── data/
 │   ├── raw/
