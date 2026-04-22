@@ -23,13 +23,13 @@ The test set has no ground-truth `log_price` (it was the Kaggle competition hold
 **Target distribution:** `log_price` is approximately normal, mean ≈ 4.78, std ≈ 0.72 (see Fig. 1).
 
 **Log Price Histogram**
-![Log Price Histogram](docs\pictures\log_price_hist.png)
+![Log Price Histogram](docs/pictures/log_price_hist.png)
 
 **Top Missing Columns**
-![Top Missing Columns](docs\pictures\top_missing_columns.png)
+![Top Missing Columns](docs/pictures/top_missing_columns.png)
 
 **1000 random test & train points in Boston**
-![1000 random test & train points](docs\pictures\random_postings_boston.png)
+![1000 random test & train points](docs/pictures/random_postings_boston.png)
 
 ---
 
@@ -67,10 +67,10 @@ Feature engineering is performed once in `Airbnb_modeling_CS6140_ML.ipynb` and c
 **Amenities.** The raw `amenities` field (e.g. `"{TV,Wifi,\"Air conditioning\",...}"`) is stripped of braces and quotes, comma-split, pipe-joined, and multi-hot encoded into 128 boolean columns — one per unique amenity observed across the full train+test union.
 
 **Pearson Correlation Heatmap of final features**
-![Pearson Correlation Heatmap of final features](docs\pictures\pearson_corr_features.png)
+![Pearson Correlation Heatmap of final features](docs/pictures/pearson_corr_features.png)
 
 **PairGrid of log_price vs DateDiffFirstReview, DateDiffHostSince, DateDiffLastReview, walkscore, transitscore, colored by city**
-![PairGrid of log_price vs DateDiffFirstReview, DateDiffHostSince, DateDiffLastReview, walkscore, transitscore, colored by city](docs\pictures\pairgrid.png)
+![PairGrid of log_price vs DateDiffFirstReview, DateDiffHostSince, DateDiffLastReview, walkscore, transitscore, colored by city](docs/pictures/pairgrid.png)
 
 ### 2.2 Model Selection
 
@@ -172,7 +172,7 @@ No labels, so no metrics. Reported for distributional sanity only:
 All five models predict test means within 0.04 of the train mean (4.78), indicating no systematic distribution shift between splits.
 
 **Holdout RMSE / R² / MAE across the 5 models (best in orange)**
-![Holdout metrics across the 5 models](docs\pictures\model_metrics.png)
+![Holdout metrics across the 5 models](docs/pictures/model_metrics.png)
 
 ---
 
