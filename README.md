@@ -96,30 +96,32 @@ CV scores are the **honest generalization estimates**. Validation-split scores f
 ```
 .
 ├── README.md
-├── notes.md                        # technical details & results
+├── notes.md                            # technical details & results
 ├── requirements.txt
-├── TA_evaluation_run.ipynb          <-- RUN THIS ONE FOR GRADING
-├── Airbnb_modeling_CS6140_ML.ipynb  # full training notebook with feature engineering
-│
-├── docs/pictures/*                  # saved pictures
+├── TA_evaluation_run.ipynb              <-- RUN THIS ONE FOR GRADING
+├── Airbnb_modeling_CS6140_ML.ipynb      # full training notebook with feature engineering
+│         
+└── docs/
+│   ├── pictures/*                        # saved pictures
+│   └── Final_Project_Report_CS6140.pdf   # final report
 │
 ├── data/
 │   ├── raw/
-│   │   ├── train.csv                # Deloitte Kaggle data
+│   │   ├── train.csv                     # Deloitte Kaggle data
 │   │   └── test.csv
 │   └── engineered/
-│       ├── features.csv             # train after feature engineering
-│       └── features_test.csv        # test  after feature engineering
+│       ├── features.csv                  # train after feature engineering
+│       └── features_test.csv             # test  after feature engineering
 │
 └── saved/
-    ├── feature_names.joblib         # canonical column order
+    ├── feature_names.joblib              # canonical column order
     └── models/
         ├── model_linreg.joblib
         ├── model_xgb.joblib
         ├── model_histgb.joblib
         ├── model_linsvr.joblib
-        ├── model_ann.keras          # Keras 3 native format
-        └── scaler_ann.joblib        # StandardScaler used by the ANN
+        ├── model_ann.keras               # Keras 3 native format
+        └── scaler_ann.joblib             # StandardScaler used by the ANN
 ```
 
 ---
